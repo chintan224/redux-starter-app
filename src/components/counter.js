@@ -3,8 +3,8 @@ import React from 'react';
 import { INCREMENT, DECREMENT } from '../state/reducers/actiontypes';
 import { UseSelector, useDispatch, useSelector } from 'react-redux';
 
-export function Counter () {
-    const count = useSelector(stat=>StaticRange.counter.count);
+export default function Counter () {
+    const count = useSelector(state=>state.counter.count);
     const dispatch = useDispatch();
 
     return (

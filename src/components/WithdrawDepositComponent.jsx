@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { actionCreators } from "../state";
 import { bindActionCreators } from "redux";
+import Navbar from "./Navbar";
 
 export default function WithdrawDepositComponent() {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ export default function WithdrawDepositComponent() {
 
   return (
     <div className="container" style={{ marginTop: "50px" }}>
+      <Navbar/>
       <button 
         className="btn btn-info"
         onClick={() => depositMoney(100)}>

@@ -1,4 +1,4 @@
-import { ADD_ITEM,REMOVE_ITEM } from "./actionTypes";
+import { ADD_ITEM,REMOVE_ITEM } from './actiontypes'
 const initialState = {
     items:[]
 }
